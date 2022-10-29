@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<style>
+    body{
+        font-family: 'Baloo 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('images/bg.jpg');
+    }
+    .left{
+        position: absolute;
+        left: 35px;
+        top:20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+    .left img{
+        width: 130px;
+        /* this function of css is use to convert the color  */
+        filter: invert(100%);
+    }   
+    .left div{
+        padding: 0px auto;
+        line-height: 18px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .mid{
+        width: 50%;
+        display: block;
+        margin: 20px auto;
+        /* border: 2px solid gold; */
+    }
+
+    .right{
+        position: absolute;
+        right: 35px;
+        top:20px;
+        display: inline-block;
+        /* border: 2px solid greenyellow; */
+    }
+
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: wheat;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(241, 52, 216);
+    }
+    .btn{
+        font-family: 'Baloo 2', cursive;
+        margin: 18px 10px;
+        background-color: black;
+        color: wheat;
+        padding: 4px 14px;
+        border: 2px solid rgb(60, 77, 34);
+        border-radius: 15px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(45, 192, 192);
+    }
+    .container{
+        border: 1px solid yellowgreen;
+        width: 30%;
+        margin: 100px 80px;
+        padding: 50px;
+        border-radius: 30px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 350px;
+        padding: 1px;
+        border: 2px solid greenyellow;
+        margin: 10px auto;
+        font-size: 22px;
+        border-radius: 10px;
+        /* font-family: 'Baloo 2', cursive; */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        margin: auto;
+        width: 33%; 
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+           <img src="images/gym.png"  alt="">
+           <div>
+            Manish Fitness
+           </div>
+        </div> 
+        <!-- here i am setting navigation bar -->
+
+        <div class="mid">
+            <ul class="navbar">
+                <!-- this active class keyword is use to when i point my mouse on any of element on navbar then it shows differnet -->
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join The Best gym</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+
+            <button class="btn" > Submit </button>
+        </form>
+    </div>
+</body>
+</html>
